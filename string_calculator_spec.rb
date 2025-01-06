@@ -25,6 +25,7 @@ RSpec.describe StringCalculator do
 
     it 'It adds two numbers' do
       expect(subject.add("1,2")).to eq(3)
+      expect(subject.add("1,5")).to eq(6)
     end
 
     it 'It adds multiple given numbers' do
@@ -44,6 +45,6 @@ RSpec.describe StringCalculator do
     it 'Support different delimiters' do
       expect(subject.add("//;\n1;2")).to eq(3)
     end
-    
+
   end
 end
